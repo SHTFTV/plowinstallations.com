@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+#map-container {
+  opacity: 1;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: mapContainerFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes mapContainerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#map-container .map-toggle,
+.map-toggle {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.15s ease,
+              border-color 0.15s ease,
+              color 0.15s ease;
+  user-select: none;
+}
+
+#map-container .map-toggle:hover,
+.map-toggle:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.35);
+}
+
+#map-container .map-toggle:active,
+.map-toggle:active {
+  transform: scale(0.95) translateY(0.5px);
+  filter: brightness(1.2);
+  box-shadow: 0 0 14px 2px rgba(245, 158, 11, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#map-container .map-toggle:focus-visible,
+.map-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.6), 0 0 10px rgba(245, 158, 11, 0.25);
+}
+
