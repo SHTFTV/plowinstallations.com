@@ -393,6 +393,14 @@ export default function App() {
               </a>
             </p>
           </div>
+          <div className="pt-4 mt-4 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-500">
+            <p>
+              A Division of <span className="text-slate-300">Builders Haus</span> • Powered by <span className="text-slate-300">Industry Army Marketing</span>
+            </p>
+            <a href="mailto:build@buildershaus.com" className="hover:text-amber-400 transition-colors">
+              Guest post with us
+            </a>
+          </div>
         </div>
       </footer>
     </div>
