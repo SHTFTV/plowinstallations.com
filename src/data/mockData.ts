@@ -12,7 +12,7 @@ export const INITIAL_SHOPS: Shop[] = [
   {
     id: "full-flow-aldergrove",
     name: "Full Flow Hydraulics & Plow Installations",
-    ownerName: "Durrand",
+    ownerName: "Durand",
     phone: "(604) 817-3783",
     emergencyPhone: "(604) 817-3783",
     email: "info@fullflowhydraulics.com",
@@ -33,7 +33,7 @@ export const INITIAL_SHOPS: Shop[] = [
       "Hydraulics Repair & Service",
     ],
     certifications: ["Ticketed Hydraulics Mechanic", "Ticketed Mechanics on Staff"],
-    bio: "Full Flow Hydraulics & Plow Installations is Durrand's hydraulics and fabrication shop in Aldergrove, BC. Durrand is a ticketed hydraulics mechanic with ticketed mechanics on staff, building custom hydraulic breakers in-house and doing steel and aluminum fabrication. The shop handles plow installs and maintenance for several snow plow companies in the Fraser Valley.",
+    bio: "Full Flow Hydraulics & Plow Installations is Durand's hydraulics and fabrication shop in Aldergrove, BC. Durand is a ticketed hydraulics mechanic with ticketed mechanics on staff, building custom hydraulic breakers in-house and doing steel and aluminum fabrication. The shop handles plow installs and maintenance for several snow plow companies in the Fraser Valley.",
   },
 ];
 
