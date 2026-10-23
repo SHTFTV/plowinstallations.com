@@ -1,3 +1,4 @@
+import { KongPromo } from "./components/KongPromo";
 import { PlowWowPromo } from "./components/PlowWowPromo";
 import React, { useState, useEffect } from "react";
 import { Navbar, ActiveTab } from "./components/Navbar";
@@ -265,6 +266,7 @@ export default function App() {
       )}
 
       <PlowWowPromo />
+      <KongPromo />
 
       {/* Footer */}
       <footer className="bg-slate-950 border-t border-slate-900 mt-12 py-8 text-xs text-slate-400">
