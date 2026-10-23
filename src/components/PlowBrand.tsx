@@ -1,0 +1,1 @@
+export function PlowBrand({large=false}:{large?:boolean}) { return <span className={`pi-brand ${large?'pi-brand-large':''}`}><img src="/brand/plow-mark.svg" alt="" width="74" height="62"/><span>PLOW<span className="pi-brand-light">INSTALLATIONS</span><small>BUILT FOR THE PUSH.</small></span></span> }

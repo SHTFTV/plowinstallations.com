@@ -1,3 +1,4 @@
+import { PlowWowPromo } from "./components/PlowWowPromo";
 import React, { useState, useEffect } from "react";
 import { Navbar, ActiveTab } from "./components/Navbar";
 import { PlowInstallationPage } from "./components/PlowInstallationPage";
@@ -46,13 +47,12 @@ export default function App() {
 
   // Newsletter Subscription
   const [newsletterEmail, setNewsletterEmail] = useState("");
-  const [newsletterSubscribed, setNewsletterSubscribed] = useState(false);
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!newsletterEmail || !newsletterEmail.includes("@")) return;
-    setNewsletterSubscribed(true);
-    showToast(`Subscribed ${newsletterEmail} to Full Flow Hydraulics bulletins and snowstorm updates!`);
+    window.location.href = `mailto:info@fullflowhydraulics.com?subject=${encodeURIComponent("Updates enquiry")}&body=${encodeURIComponent("Please let me know whether shop updates are available for " + newsletterEmail)}`;
+    showToast("Email draft opened. Send it from your email app to contact Full Flow.");
     setNewsletterEmail("");
   };
 
@@ -82,7 +82,8 @@ export default function App() {
 
   const handleSendDirectQuoteRequest = (e: React.FormEvent) => {
     e.preventDefault();
-    showToast(`Quote request dispatched to Full Flow Hydraulics! Our Aldergrove shop will contact you at ${quotePhone}.`);
+    window.location.href = `mailto:info@fullflowhydraulics.com?subject=${encodeURIComponent("Snowplow service enquiry")}&body=${encodeURIComponent(`Name: ${quoteName}\nPhone: ${quotePhone}\nEmail: ${quoteEmail}\nTruck: ${quoteVehicle}\nPlow: ${quotePlow}\nDetails: ${quoteNotes}`)}`;
+    showToast("Email draft opened. Send it from your email app to request a quote.");
     setIsQuoteModalOpen(false);
     setQuoteVehicle("");
     setQuotePlow("");
@@ -110,7 +111,7 @@ export default function App() {
       />
 
       {/* Primary Content Container */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className={activeTab === "shop" || activeTab === "directory" ? "flex-1 w-full" : "flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6"}>
         {(activeTab === "shop" || activeTab === "directory") && (
           <PlowInstallationPage
             onNavigateToFitment={() => setActiveTab("fitment")}
@@ -255,13 +256,15 @@ export default function App() {
                   type="submit"
                   className="px-5 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs shadow-md shadow-amber-500/20"
                 >
-                  Submit Quote to Full Flow Hydraulics
+                  Open quote email draft
                 </button>
               </div>
             </form>
           </div>
         </div>
       )}
+
+      <PlowWowPromo />
 
       {/* Footer */}
       <footer className="bg-slate-950 border-t border-slate-900 mt-12 py-8 text-xs text-slate-400">
@@ -286,7 +289,7 @@ export default function App() {
                 onClick={() => setActiveTab("shop")}
                 className="hover:text-amber-400 transition-colors"
               >
-                3-Bay Shop
+                The shop
               </button>
               <button
                 onClick={() => setActiveTab("fitment")}
@@ -334,23 +337,17 @@ export default function App() {
                 <div className="flex items-center space-x-2">
                   <Bell className="w-4 h-4 text-amber-400" />
                   <h4 className="text-sm font-bold text-white tracking-tight">
-                    Full Flow Hydraulics Technical Bulletins & Storm Alerts
+                    Ask about shop updates
                   </h4>
                   <span className="px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono text-[10px]">
                     Fraser Valley / BC
                   </span>
                 </div>
                 <p className="text-[11px] text-slate-400">
-                  Subscribe for technical fitment bulletins, hydraulic fluid maintenance reminders, and winter blizzard emergency response notices in Aldergrove and Langley.
+                  Email Full Flow to ask about equipment maintenance updates. This opens an email draft; it does not register a subscription.
                 </p>
               </div>
 
-              {newsletterSubscribed ? (
-                <div className="flex items-center space-x-2 bg-emerald-950/80 border border-emerald-700/80 text-emerald-300 px-4 py-2.5 rounded-lg text-xs font-semibold">
-                  <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Subscribed! You&apos;ll receive technical bulletins and storm updates.</span>
-                </div>
-              ) : (
                 <form
                   onSubmit={handleNewsletterSubmit}
                   className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full lg:w-auto"
@@ -370,10 +367,9 @@ export default function App() {
                     type="submit"
                     className="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition-colors shrink-0"
                   >
-                    Subscribe
+                    Open email draft
                   </button>
                 </form>
-              )}
             </div>
           </div>
 
