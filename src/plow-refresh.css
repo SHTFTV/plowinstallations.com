@@ -8,3 +8,6 @@
 /* Keep the paired campaigns together, with their mascots on the right. */
 .pi-wow-inner{grid-template-columns:1fr auto 145px;grid-template-areas:"copy action mascot"}.pi-kong-inner{grid-template-columns:1fr auto 130px;grid-template-areas:"copy action mascot"}.pi-wow-inner>img,.pi-kong-inner>img{grid-area:mascot}.pi-wow-inner>div,.pi-kong-inner>div{grid-area:copy}.pi-wow-inner>.pi-button,.pi-kong-inner>.pi-button{grid-area:action}
 @media(max-width:800px){.pi-wow-inner,.pi-kong-inner{grid-template-columns:1fr 85px;grid-template-areas:"copy mascot" "action action"}.pi-wow-inner>.pi-button,.pi-kong-inner>.pi-button{justify-self:stretch}}
+/* Alternate the campaign mascots: Wow left, Kong right. */
+.pi-wow-inner{grid-template-columns:145px 1fr auto;grid-template-areas:"mascot copy action"}
+@media(max-width:800px){.pi-wow-inner{grid-template-columns:85px 1fr;grid-template-areas:"mascot copy" "action action"}}
