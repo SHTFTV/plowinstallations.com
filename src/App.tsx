@@ -1,3 +1,4 @@
+import {FullFlowContact} from './components/FullFlowContact';
 import { KongPromo } from "./components/KongPromo";
 import { PlowWowPromo } from "./components/PlowWowPromo";
 import React, { useState, useEffect } from "react";
@@ -162,7 +163,7 @@ export default function App() {
                   <span>Request Quote • Full Flow Hydraulics</span>
                 </h3>
                 <p className="text-xs text-slate-400 mt-0.5">
-                  26020 62 Ave, Aldergrove, BC • Rate: $125/hr
+                  26020 62 Ave, Aldergrove, BC • Ask the shop for current pricing
                 </p>
               </div>
               <button
@@ -265,6 +266,7 @@ export default function App() {
         </div>
       )}
 
+      <FullFlowContact />
       <PlowWowPromo />
       <KongPromo />
 
@@ -393,7 +395,7 @@ export default function App() {
           </div>
           <div className="pt-4 mt-4 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-500">
             <p>
-              A Division of <span className="text-slate-300">Builders Haus</span> • Powered by <span className="text-slate-300">Industry Army Marketing</span>
+              A Division of <span className="text-slate-300">Builders Haus</span> • <a href="https://industryarmymarketing.com/" className="text-slate-300 underline">Powered by Industry Army Marketing</a>
             </p>
             <a href="mailto:build@buildershaus.com" className="hover:text-amber-400 transition-colors">
               Guest post with us
