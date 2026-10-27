@@ -266,6 +266,7 @@ export default function App() {
         </div>
       )}
 
+      <section className="pi-ad-slim" aria-label="Latest shop guide"><div><small>SHOP GUIDE · OCTOBER 26, 2026</small><h2>Before the storm. Before the scramble.</h2><p>Identify your equipment, document the issue and confirm the parts conversation with Durand.</p></div><a className="pi-button" href="/guides/preseason-snowplow-parts-service-aldergrove/">Read the guide ↗</a></section>
       <FullFlowContact />
       <PlowWowPromo />
       <KongPromo />
