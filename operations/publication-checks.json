@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "article": {
+        "id": "metal-pless-plbh-0836-16-hydraulic-wing-plow",
+        "title": "Metal Pless PLBH 0836-16: eight feet in the box, sixteen feet extended",
+        "url": "https://www.plowinstallations.com/guides/metal-pless-plbh-0836-16-hydraulic-wing-plow/",
+        "publishedAt": "2026-11-10T01:42:23+00:00",
+        "image": "https://www.plowinstallations.com/brand/metal-pless-plbh-0836-16-share.png"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-10T01:48:46.988858+00:00",
+        "verifiedAt": "2026-11-10T01:48:46.988876+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/42738362692",
+      "loadedCommit": "d2de72fa5fddc2152f6f7fe1baef2fd23cc873a5",
+      "siteSopVersion": 1
+    }
+  ]
+}
