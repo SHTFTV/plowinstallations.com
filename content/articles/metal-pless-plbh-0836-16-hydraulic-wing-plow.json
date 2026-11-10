@@ -1,0 +1,44 @@
+{
+  "id": "metal-pless-plbh-0836-16-hydraulic-wing-plow",
+  "model": "PLBH 0836-16",
+  "title": "Metal Pless PLBH 0836-16: eight feet in the box, sixteen feet extended",
+  "summary": "An 8 ft box, 16 ft expanded width and hydraulic wings: keep the exact PlowMaxx model, carrier application and cutting-edge specification together before an installation enquiry.",
+  "publishedAt": "2026-11-10T01:42:23+00:00",
+  "displayDate": "November 9, 2026",
+  "sourceCheckedOn": "2026-11-09",
+  "boxWidthFt": 8,
+  "expandedWidthFt": 16,
+  "wingWidthFt": 4,
+  "heightIn": 36,
+  "approxWeightLb": 2435,
+  "compatibleCarrierFamilies": [
+    "wheel loader",
+    "skid steer",
+    "backhoe"
+  ],
+  "sections": [
+    {
+      "heading": "Eight feet in the box, sixteen feet extended",
+      "text": "The Metal Pless PlowMaxx PLBH 0836-16 combines an eight-foot box width with a sixteen-foot extended blade. Two four-foot hydraulic wings let the operator change the working configuration instead of committing every pass to one fixed shape."
+    },
+    {
+      "heading": "Confirm the ordered configuration",
+      "text": "The manufacturer lists a 36-inch blade height, an approximate 2,435-pound attachment weight and a 12,001\u201318,000-pound carrier application. Its available cutting-edge configurations include LiveEdge, alongside other options. Confirm the exact ordered edge; the model family alone does not establish what is fitted."
+    },
+    {
+      "heading": "Match the equipment, not a photograph",
+      "text": "This is an equipment-matching story as much as a width story. Metal Pless lists PlowMaxx for wheel loaders, skid steers and backhoes. A photograph of a similar plow on a tractor or truck does not establish compatibility with this model. Ask the supplier to verify the carrier, mounting interface, hydraulic requirements and operating limits before arranging installation."
+    },
+    {
+      "heading": "Put the route into the conversation",
+      "text": "For contractors moving between confined areas and open parking lots, adjustable wings offer an operational question worth testing: which configuration best suits each part of the route? Evaluate the complete machine and attachment together, including transport and storage arrangements."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Metal Pless: current PlowMaxx specifications and official gallery\u2014PLBH0836-16",
+      "url": "https://www.metal-pless.com/products/plowmaxx"
+    }
+  ],
+  "url": "https://www.plowinstallations.com/guides/metal-pless-plbh-0836-16-hydraulic-wing-plow/"
+}

@@ -1,0 +1,39 @@
+name: Verify live guides and record public results
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/guides/**/index.html'
+      - 'scripts/verify-and-record-publications.py'
+      - '.github/workflows/publication-results.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: plow-installations-publication-evidence
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+          fetch-depth: 2
+      - name: Verify new actual public guide and discovery; generate sanitized result
+        env:
+          PUBLICATION_BEFORE_SHA: ${{ github.event.before }}
+        run: python3 scripts/verify-and-record-publications.py
+      - name: Save public outcome and private verification evidence
+        if: always()
+        run: |
+          git config user.name SHTFTV
+          git config user.email 264305872+SHTFTV@users.noreply.github.com
+          if [ -f public/publication-results.json ]; then
+            git add public/publication-results.json operations/publication-checks.json
+            if ! git diff --cached --quiet; then
+              git commit -m 'Record actual Plow Installations publication verification'
+              git push origin HEAD:main
+            fi
+          fi

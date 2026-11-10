@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "site": "Plow Installations",
+  "domain": "www.plowinstallations.com",
+  "repository": "SHTFTV/plowinstallations.com",
+  "publishingRoute": {
+    "provider": "Vercel",
+    "projectId": "prj_sHeDAOfLNnXXmpSADwTxI29YnatY",
+    "teamId": "team_kTW4N3LZceZMmT95CWJpgwhM",
+    "framework": "Vite",
+    "publicSourceDirectory": "public",
+    "outputDirectory": "dist"
+  },
+  "publication": {
+    "id": "metal-pless-plbh-0836-16-hydraulic-wing-plow",
+    "title": "Metal Pless PLBH 0836-16: eight feet in the box, sixteen feet extended",
+    "url": "https://www.plowinstallations.com/guides/metal-pless-plbh-0836-16-hydraulic-wing-plow/",
+    "publishedAt": "2026-11-10T01:42:23+00:00",
+    "sourceUrls": [
+      "https://www.metal-pless.com/products/plowmaxx"
+    ]
+  },
+  "template": "scripts/render-feature.py + templates/retained-guide.html",
+  "assets": [
+    "public/brand/plow-logo-light.svg",
+    "public/brand/plow-mark.svg",
+    "public/brand/metal-pless-plbh-0836-16-diagram.svg",
+    "public/brand/metal-pless-plbh-0836-16-share.png"
+  ],
+  "rules": [
+    "Publish the prepared16-foot PLBH0836-16 main feature, not the19-footTruckMaxx",
+    "PLBH0836-16:8ftbox/16ftexpanded,4ftwings,36inheight,approx2435lb; carrierapplication12001\u201318000lb",
+    "Manufacturer lists wheelloader/skidsteer/backhoe, not truck compatibility",
+    "Distinguish hydraulic wings from segmented cutting edges; verify ordered LiveEdge option",
+    "Preserve Full Flow Hydraulics/Durand contact, native enquiries, existing advertising and all prior post dates",
+    "No unsafe installation instructions, dealer/inventory/compatibility claims or copied manufacturer photos",
+    "Public done event only after actual live article/content/source/discovery verification"
+  ],
+  "decisions": [
+    {
+      "date": "2026-11-09",
+      "source": "Explicit user instruction relayed by coordinator",
+      "decision": "Publish prepared16-footfeature through existingverifiedsite and automatically emit sanitizedcommand-centerpublication result"
+    }
+  ],
+  "sourceEvidence": "Prepared editorial and installation handoff from realtime-voice-chat-4/outputs/trade-content; no new factual research claims",
+  "priorPosts": "public/feed.xml and existing guideHTML preserve original URLs/timestamps; append only this feature"
+}
