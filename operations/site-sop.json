@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 1,
+  "version": 2,
   "site": "Plow Installations",
   "domain": "www.plowinstallations.com",
   "repository": "SHTFTV/plowinstallations.com",
@@ -13,12 +13,15 @@
     "outputDirectory": "dist"
   },
   "publication": {
-    "id": "metal-pless-plbh-0836-16-hydraulic-wing-plow",
-    "title": "Metal Pless PLBH 0836-16: eight feet in the box, sixteen feet extended",
-    "url": "https://www.plowinstallations.com/guides/metal-pless-plbh-0836-16-hydraulic-wing-plow/",
-    "publishedAt": "2026-11-10T01:42:23+00:00",
+    "id": "boss-drag-pro-8-16-parking-lot-killer",
+    "title": "BOSS DRAG PRO 8\u201316: the parking lot killer",
+    "url": "https://www.plowinstallations.com/guides/boss-drag-pro-8-16-parking-lot-killer/",
+    "publishedAt": "2026-11-11T16:54:01-08:00",
     "sourceUrls": [
-      "https://www.metal-pless.com/products/plowmaxx"
+      "https://www.bossplow.com/en/product/RPL21616",
+      "https://cdn.bossplow.com/content/servicecenter/documents/MSC22983_B.pdf",
+      "https://info.bossplow.com/drag-pro-rear-plow",
+      "https://www.bossplow.com/en/product-selector"
     ]
   },
   "template": "scripts/render-feature.py + templates/retained-guide.html",
@@ -34,16 +37,24 @@
     "Manufacturer lists wheelloader/skidsteer/backhoe, not truck compatibility",
     "Distinguish hydraulic wings from segmented cutting edges; verify ordered LiveEdge option",
     "Preserve Full Flow Hydraulics/Durand contact, native enquiries, existing advertising and all prior post dates",
-    "No unsafe installation instructions, dealer/inventory/compatibility claims or copied manufacturer photos",
-    "Public done event only after actual live article/content/source/discovery verification"
+    "Public done event only after actual live article/content/source/discovery verification",
+    "Use company-original exact-model source photographs where available with honest source credit; no Shutterstock or unrelated equipment. Minimum 1600x900 16:9, no upscaling, preserve subject, small site branding; inspect desktop and phone hero/card/social. No invented image-rights registry gate.",
+    "Only the existing publication-results workflow writes outcome receipts. A held image/story/feed must not stop independent eligible work; keep unresolved blockers recorded until verified fixed.",
+    "No universal compatibility, torque, wiring, hydraulic or ballast instructions. Verify exact model/serial and vehicle-specific manufacturer documents.",
+    "Distinguish manually published and live-verified articles from whole-site runtime publisher automation. This post proves no scheduled runtime."
   ],
   "decisions": [
     {
       "date": "2026-11-09",
       "source": "Explicit user instruction relayed by coordinator",
       "decision": "Publish prepared16-footfeature through existingverifiedsite and automatically emit sanitizedcommand-centerpublication result"
+    },
+    {
+      "date": "2026-11-11",
+      "source": "User instruction via coordinator",
+      "decision": "Replace proposed DXT with BOSS DRAG PRO 8\u201316 rear plow; use parking lot killer editorial angle; publish with official photography."
     }
   ],
-  "sourceEvidence": "Prepared editorial and installation handoff from realtime-voice-chat-4/outputs/trade-content; no new factual research claims",
+  "sourceEvidence": "Official BOSS RPL21616 page, MSC22983 Rev B, DRAG PRO landing page and Product Selector; checked November 11, 2026",
   "priorPosts": "public/feed.xml and existing guideHTML preserve original URLs/timestamps; append only this feature"
 }

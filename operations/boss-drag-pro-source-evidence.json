@@ -1,0 +1,55 @@
+{
+  "article": "boss-drag-pro-8-16-parking-lot-killer",
+  "checkedOn": "2026-11-11",
+  "historyAudit": {
+    "canonicalGuidesBeforePublication": 9,
+    "duplicatesFound": 0,
+    "searched": [
+      "DRAG PRO",
+      "drag-pro",
+      "RPL21616"
+    ],
+    "scope": "all canonical guide HTML, content records, feed, sitemap and repository history"
+  },
+  "assets": [
+    {
+      "source": "https://info.bossplow.com/hubfs/201801_Boss-3085.jpg",
+      "original": [
+        8256,
+        5504
+      ],
+      "crop": [
+        0,
+        250,
+        8256,
+        4894
+      ],
+      "output": "/brand/boss-drag-pro-8-16-parking-lot-killer-expanded.png",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "source": "https://info.bossplow.com/hubfs/201801_Boss-3363.jpg",
+      "original": [
+        8256,
+        5504
+      ],
+      "crop": [
+        0,
+        0,
+        8256,
+        4644
+      ],
+      "output": "/brand/boss-drag-pro-8-16-parking-lot-killer-folded.png",
+      "dimensions": [
+        1600,
+        900
+      ]
+    }
+  ],
+  "credit": "BOSS Products / The Toro Company",
+  "rightsClaim": "Manufacturer source photography used per user editorial instruction; no separate license or permission claimed.",
+  "automationScope": "Manual editorial publication via existing Git/Vercel path. Existing sole publication-results writer retained. Does not establish autonomous scheduled editorial operation."
+}
