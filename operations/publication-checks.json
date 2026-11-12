@@ -16,6 +16,23 @@
       "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/42738362692",
       "loadedCommit": "d2de72fa5fddc2152f6f7fe1baef2fd23cc873a5",
       "siteSopVersion": 1
+    },
+    {
+      "article": {
+        "id": "boss-drag-pro-8-16-parking-lot-killer",
+        "title": "BOSS DRAG PRO 8\u201316: the parking lot killer",
+        "url": "https://www.plowinstallations.com/guides/boss-drag-pro-8-16-parking-lot-killer/",
+        "publishedAt": "2026-11-11T16:54:01-08:00",
+        "image": "https://www.plowinstallations.com/brand/boss-drag-pro-8-16-parking-lot-killer-expanded.png"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-12T05:20:39.658576+00:00",
+        "verifiedAt": "2026-11-12T05:20:39.658599+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43160710738",
+      "loadedCommit": "de0a9584535aa49a9fe65aa68dc4e8bb38cb7f58",
+      "siteSopVersion": 2
     }
   ]
 }
