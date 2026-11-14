@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 2,
+  "version": 3,
   "site": "Plow Installations",
   "domain": "www.plowinstallations.com",
   "repository": "SHTFTV/plowinstallations.com",
@@ -56,5 +56,13 @@
     }
   ],
   "sourceEvidence": "Official BOSS RPL21616 page, MSC22983 Rev B, DRAG PRO landing page and Product Selector; checked November 11, 2026",
-  "priorPosts": "public/feed.xml and existing guideHTML preserve original URLs/timestamps; append only this feature"
+  "priorPosts": "public/feed.xml and existing guideHTML preserve original URLs/timestamps; append only this feature",
+  "observer": {
+    "nativeSchedule": "23 * * * *",
+    "statusURL": "https://www.plowinstallations.com/publication-status.json",
+    "scope": "Reverify existing canonical guides and retain isolated failures; not automatic authoring",
+    "publicationWriter": "not connected",
+    "emptyQueueState": "no eligible publication queue; never publishing success",
+    "imageIdentity": "Supported PNG/JPEG/WebP magic and exact committed featured-image SHA256"
+  }
 }

@@ -1,4 +1,5 @@
-import json,re,unittest,importlib.util,tempfile
+import json,re,unittest,importlib.util,tempfile,os
+from unittest.mock import patch
 from pathlib import Path
 from xml.etree import ElementTree as ET
 P=Path(__file__).resolve().parents[1]
@@ -14,6 +15,22 @@ class Tests(unittest.TestCase):
   for f,size in [('metal-pless-plbh-0836-16-diagram.svg',(1200,630)),('metal-pless-plbh-0836-16-diagram-phone.svg',(480,460))]:
    r=ET.fromstring((P/'public/brand'/f).read_text());self.assertEqual((int(r.attrib['width']),int(r.attrib['height'])),size)
   self.assertTrue((P/'public/brand/metal-pless-plbh-0836-16-share.png').read_bytes().startswith(b'\x89PNG'))
+ def test_jpeg_featured_asset_matches_exact_live_bytes(self):
+  p=P/'public/brand/fisher-ezv-half-ton-share.jpg';raw=p.read_bytes();v.validate_image('https://www.plowinstallations.com/brand/'+p.name,raw)
+  with self.assertRaisesRegex(ValueError,'differs'):v.validate_image('https://www.plowinstallations.com/brand/'+p.name,raw[:-1]+b'x')
+ def test_external_asset_cannot_be_verified_as_local_source(self):
+  with self.assertRaisesRegex(ValueError,'host/path'):v.validate_image('https://unreviewed.example/photo.jpg',b'\xff\xd8\xff'+b'x'*1100)
+ def test_calendar_date_metadata_is_preserved_without_invented_time(self):
+  a=v.article_metadata(P/'public/guides/snow-plow-installation-costs/index.html');self.assertRegex(a['publishedAt'],r'^\d{4}-\d{2}-\d{2}$')
+ def test_idle_observer_does_not_create_repeat_heartbeat_commits(self):
+  original=v.ROOT
+  try:
+   with tempfile.TemporaryDirectory() as tmp:
+    v.ROOT=Path(tmp);(v.ROOT/'public/guides').mkdir(parents=True);(v.ROOT/'operations').mkdir()
+    with patch.dict(os.environ,{'GITHUB_EVENT_NAME':'schedule','PUBLICATION_REPORT_PATH':tmp+'/report.json'}):
+     v.main();first=(v.ROOT/'public/publication-status.json').read_bytes();v.main();second=(v.ROOT/'public/publication-status.json').read_bytes()
+    self.assertEqual(first,second);self.assertFalse(json.loads(second)['automaticPublicationVerified']);self.assertEqual(json.loads(second)['status'],'no-new-guide-output')
+  finally:v.ROOT=original
  def test_public_event_is_sanitized_and_idempotent(self):
   original=v.ROOT
   try:

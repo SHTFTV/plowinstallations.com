@@ -5,7 +5,10 @@ on:
     paths:
       - 'public/guides/**/index.html'
       - 'scripts/verify-and-record-publications.py'
+      - 'scripts/test_publication.py'
       - '.github/workflows/publication-results.yml'
+  schedule:
+    - cron: '23 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -21,8 +24,11 @@ jobs:
         with:
           ref: main
           fetch-depth: 2
+      - name: Verify observer regression checks
+        run: python3 -m unittest discover -s scripts -p 'test_publication.py' -v
       - name: Verify new actual public guide and discovery; generate sanitized result
         env:
+          PUBLICATION_REPORT_PATH: ${{ runner.temp }}/plow-observer-report.json
           PUBLICATION_BEFORE_SHA: ${{ github.event.before }}
         run: python3 scripts/verify-and-record-publications.py
       - name: Save public outcome and private verification evidence
@@ -31,9 +37,19 @@ jobs:
           git config user.name SHTFTV
           git config user.email 264305872+SHTFTV@users.noreply.github.com
           if [ -f public/publication-results.json ]; then
-            git add public/publication-results.json operations/publication-checks.json
+            git add public/publication-results.json public/publication-status.json operations/publication-checks.json operations/latest-observer-run.json
             if ! git diff --cached --quiet; then
               git commit -m 'Record actual Plow Installations publication verification'
+              # Receipt files are the only write scope. Rebase preserves any concurrent
+              # editorial commit; a conflict fails visibly and retries next native run.
+              git pull --rebase origin main
               git push origin HEAD:main
             fi
           fi
+      - name: Retain actual observer run without forcing an idle deployment
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: plow-observer-${{ github.run_id }}
+          path: ${{ runner.temp }}/plow-observer-report.json
+          retention-days: 14

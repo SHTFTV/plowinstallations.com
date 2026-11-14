@@ -1,0 +1,4 @@
+{
+  "status": "awaiting-first-native-run",
+  "note": "Local source regression checks passed; no native execution receipt is inferred."
+}

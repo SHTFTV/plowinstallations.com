@@ -1,0 +1,9 @@
+{
+  "site": "plowinstallations.com",
+  "checkedAt": null,
+  "scope": "Existing guide publication observer; not an article author or publisher",
+  "status": "awaiting-first-native-observer-run",
+  "automaticArticleWriterConfigured": false,
+  "automaticPublicationVerified": false,
+  "noEligibleContentReason": "No approved publication queue or automatic author is connected; existing guides are observed without creating new posts."
+}
