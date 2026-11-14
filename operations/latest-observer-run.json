@@ -1,4 +1,71 @@
 {
-  "status": "awaiting-first-native-run",
-  "note": "Local source regression checks passed; no native execution receipt is inferred."
+  "status": {
+    "site": "plowinstallations.com",
+    "checkedAt": "2026-11-14T02:15:52.625295+00:00",
+    "trigger": "push",
+    "sourceCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+    "scope": "Existing guide publication observer; not an article author or publisher",
+    "status": "existing-guides-verified",
+    "checkedGuides": 10,
+    "passedGuides": 10,
+    "failures": [],
+    "automaticArticleWriterConfigured": false,
+    "automaticPublicationVerified": false,
+    "noEligibleContentReason": "No approved publication queue or automatic author is connected; existing guides are observed without creating new posts.",
+    "timestampMeaning": "Last material observer state change; use native Actions run for freshness"
+  },
+  "results": [
+    {
+      "id": "boss-drag-pro-8-16-parking-lot-killer",
+      "url": "https://www.plowinstallations.com/guides/boss-drag-pro-8-16-parking-lot-killer/",
+      "status": "done"
+    },
+    {
+      "id": "fisher-ez-v-half-ton-used-plow-fitment-service",
+      "url": "https://www.plowinstallations.com/guides/fisher-ez-v-half-ton-used-plow-fitment-service/",
+      "status": "done"
+    },
+    {
+      "id": "metal-pless-plbh-0836-16-hydraulic-wing-plow",
+      "url": "https://www.plowinstallations.com/guides/metal-pless-plbh-0836-16-hydraulic-wing-plow/",
+      "status": "done"
+    },
+    {
+      "id": "polar-vortex-preseason-plow-readiness-durand",
+      "url": "https://www.plowinstallations.com/guides/polar-vortex-preseason-plow-readiness-durand/",
+      "status": "done"
+    },
+    {
+      "id": "preseason-snowplow-parts-service-aldergrove",
+      "url": "https://www.plowinstallations.com/guides/preseason-snowplow-parts-service-aldergrove/",
+      "status": "done"
+    },
+    {
+      "id": "preseason-snowplow-repair-checklist-durand",
+      "url": "https://www.plowinstallations.com/guides/preseason-snowplow-repair-checklist-durand/",
+      "status": "done"
+    },
+    {
+      "id": "sno-way-29hd-76-truck-fitment-mount-controls",
+      "url": "https://www.plowinstallations.com/guides/sno-way-29hd-76-truck-fitment-mount-controls/",
+      "status": "done"
+    },
+    {
+      "id": "sno-way-lineup-truck-plow-fitment-durand",
+      "url": "https://www.plowinstallations.com/guides/sno-way-lineup-truck-plow-fitment-durand/",
+      "status": "done"
+    },
+    {
+      "id": "snow-plow-installation-costs",
+      "url": "https://www.plowinstallations.com/guides/snow-plow-installation-costs/",
+      "status": "done"
+    },
+    {
+      "id": "western-ultramount-2-attachment-installation-guide",
+      "url": "https://www.plowinstallations.com/guides/western-ultramount-2-attachment-installation-guide/",
+      "status": "done"
+    }
+  ],
+  "failures": [],
+  "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988"
 }

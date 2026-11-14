@@ -33,6 +33,142 @@
       "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43160710738",
       "loadedCommit": "de0a9584535aa49a9fe65aa68dc4e8bb38cb7f58",
       "siteSopVersion": 2
+    },
+    {
+      "article": {
+        "id": "fisher-ez-v-half-ton-used-plow-fitment-service",
+        "title": "FISHER EZ-V on a half-ton: fit, used buying and local service",
+        "url": "https://www.plowinstallations.com/guides/fisher-ez-v-half-ton-used-plow-fitment-service/",
+        "publishedAt": "2026-10-29T13:05:29.116297-07:00",
+        "image": "https://www.plowinstallations.com/brand/fisher-ezv-half-ton-share.jpg"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-14T02:15:49.712823+00:00",
+        "verifiedAt": "2026-11-14T02:15:49.712834+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988",
+      "loadedCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+      "siteSopVersion": 3
+    },
+    {
+      "article": {
+        "id": "polar-vortex-preseason-plow-readiness-durand",
+        "title": "Polar-vortex headlines: prepare your plow enquiry with Durand",
+        "url": "https://www.plowinstallations.com/guides/polar-vortex-preseason-plow-readiness-durand/",
+        "publishedAt": "2026-10-28T17:13:30-07:00",
+        "image": "https://www.plowinstallations.com/brand/polar-vortex-preseason-plow-readiness-durand-share.jpg"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-14T02:15:50.635537+00:00",
+        "verifiedAt": "2026-11-14T02:15:50.635550+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988",
+      "loadedCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+      "siteSopVersion": 3
+    },
+    {
+      "article": {
+        "id": "preseason-snowplow-parts-service-aldergrove",
+        "title": "Before the first storm: plan your plow parts and service",
+        "url": "https://www.plowinstallations.com/guides/preseason-snowplow-parts-service-aldergrove/",
+        "publishedAt": "2026-10-26",
+        "image": "https://www.plowinstallations.com/brand/preseason-parts-service.jpg"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-14T02:15:50.931685+00:00",
+        "verifiedAt": "2026-11-14T02:15:50.931695+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988",
+      "loadedCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+      "siteSopVersion": 3
+    },
+    {
+      "article": {
+        "id": "preseason-snowplow-repair-checklist-durand",
+        "title": "Pre-season snowplow repairs: the checklist to bring Durand",
+        "url": "https://www.plowinstallations.com/guides/preseason-snowplow-repair-checklist-durand/",
+        "publishedAt": "2026-10-28T23:48:54-07:00",
+        "image": "https://www.plowinstallations.com/brand/preseason-snowplow-repair-checklist-durand-share.jpg"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-14T02:15:51.354957+00:00",
+        "verifiedAt": "2026-11-14T02:15:51.354968+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988",
+      "loadedCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+      "siteSopVersion": 3
+    },
+    {
+      "article": {
+        "id": "sno-way-29hd-76-truck-fitment-mount-controls",
+        "title": "Sno-Way 29HD 7\u20326\u2033: match the truck, mount and controls",
+        "url": "https://www.plowinstallations.com/guides/sno-way-29hd-76-truck-fitment-mount-controls/",
+        "publishedAt": "2026-11-02T20:27:18-08:00",
+        "image": "https://www.plowinstallations.com/brand/snoway-29hd-share.jpg"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-14T02:15:51.735271+00:00",
+        "verifiedAt": "2026-11-14T02:15:51.735282+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988",
+      "loadedCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+      "siteSopVersion": 3
+    },
+    {
+      "article": {
+        "id": "sno-way-lineup-truck-plow-fitment-durand",
+        "title": "Sno-Way lineup: which plow fits your truck and route?",
+        "url": "https://www.plowinstallations.com/guides/sno-way-lineup-truck-plow-fitment-durand/",
+        "publishedAt": "2026-10-27",
+        "image": "https://www.plowinstallations.com/brand/sno-way-lineup.jpg"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-14T02:15:52.203425+00:00",
+        "verifiedAt": "2026-11-14T02:15:52.203436+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988",
+      "loadedCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+      "siteSopVersion": 3
+    },
+    {
+      "article": {
+        "id": "snow-plow-installation-costs",
+        "title": "Snow plow installation costs: a quick breakdown for Full Flow customers",
+        "url": "https://www.plowinstallations.com/guides/snow-plow-installation-costs/",
+        "publishedAt": "2026-10-24",
+        "image": "https://www.plowinstallations.com/brand/plow-installation-costs.jpg"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-14T02:15:52.441322+00:00",
+        "verifiedAt": "2026-11-14T02:15:52.441334+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988",
+      "loadedCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+      "siteSopVersion": 3
+    },
+    {
+      "article": {
+        "id": "western-ultramount-2-attachment-installation-guide",
+        "title": "WESTERN UltraMount 2: attachment is not a truck installation",
+        "url": "https://www.plowinstallations.com/guides/western-ultramount-2-attachment-installation-guide/",
+        "publishedAt": "2026-10-28",
+        "image": "https://www.plowinstallations.com/brand/western-mount-share.jpg"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-14T02:15:52.624276+00:00",
+        "verifiedAt": "2026-11-14T02:15:52.624285+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988",
+      "loadedCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+      "siteSopVersion": 3
     }
   ]
 }

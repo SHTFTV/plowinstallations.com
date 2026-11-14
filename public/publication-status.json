@@ -1,9 +1,15 @@
 {
   "site": "plowinstallations.com",
-  "checkedAt": null,
+  "checkedAt": "2026-11-14T02:15:52.625295+00:00",
+  "trigger": "push",
+  "sourceCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
   "scope": "Existing guide publication observer; not an article author or publisher",
-  "status": "awaiting-first-native-observer-run",
+  "status": "existing-guides-verified",
+  "checkedGuides": 10,
+  "passedGuides": 10,
+  "failures": [],
   "automaticArticleWriterConfigured": false,
   "automaticPublicationVerified": false,
-  "noEligibleContentReason": "No approved publication queue or automatic author is connected; existing guides are observed without creating new posts."
+  "noEligibleContentReason": "No approved publication queue or automatic author is connected; existing guides are observed without creating new posts.",
+  "timestampMeaning": "Last material observer state change; use native Actions run for freshness"
 }
