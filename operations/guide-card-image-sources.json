@@ -1,0 +1,23 @@
+[
+  {
+    "path": "public/brand/plowinstallations-metal-pless-plowmaxx.webp",
+    "source": "https://www.metal-pless.com/hubfs/metalpless/products/plowmaxx-plss-0830-13le/plowmaxx_-plss-0830-13le-45-avant-front-left.webp",
+    "sha256": "8f8399ca515e105305e8c3ede9ebbe3d871d35643e9155631fa9ecb015be9447",
+    "credit": "Metal Pless \u2014 PlowMaxx family photograph; not an exact PLBH 0836-16 depiction"
+  },
+  {
+    "path": "public/brand/plowinstallations-sno-way-29hd.webp",
+    "source": "https://snoway.com/wp-content/uploads/2026/07/Straight-Blade-Snowplow-Left-View.png",
+    "sourcePage": "https://snoway.com/product/29hd-series-2-snowplow-76-blade/",
+    "credit": "Sno-Way \u2014 29HD / Tundra Ram straight-blade product photograph",
+    "sourceSha256": "87d94c4e2ede491672431c1f667a2057117f88fa56b1b54c6f83e11dcca6599c",
+    "sha256": "16ff588fc4184008ead6e78397476a2c8271c830d94a927f4c13315ac9564e69",
+    "conversion": "Lossless WebP encoding only; no crop or visual changes"
+  },
+  {
+    "path": "public/brand/plowinstallations-fisher-ez-v.jpeg",
+    "source": "https://fisherplows.com/wp-content/uploads/sites/2/2021/08/EZ-V_GalleryImage13.jpeg",
+    "sha256": "bebbf3fd58621e6705a1f9d604b6e34373fd1aeaaf8c2884bdd8b930df61903e",
+    "credit": "FISHER / Douglas Dynamics \u2014 EZ-V product photograph"
+  }
+]
