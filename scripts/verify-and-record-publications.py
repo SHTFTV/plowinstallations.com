@@ -27,7 +27,13 @@ def article_metadata(path):
  # Preserve legacy dates; do not invent a publication time to satisfy a verifier.
  if re.fullmatch(r'\d{4}-\d{2}-\d{2}',a['datePublished']):stamp=stamp.replace(tzinfo=timezone.utc)
  if not stamp.tzinfo or stamp>datetime.now(timezone.utc)+timedelta(minutes=5):raise ValueError('Accurate nonfuture publication date required')
- return {'id':url.rstrip('/').split('/')[-1],'title':a['headline'],'url':url,'publishedAt':a['datePublished'],'image':a.get('image')}
+ image=a.get('image')
+ if isinstance(image,dict):
+  if image.get('@type')!='ImageObject':raise ValueError('Unsupported article image metadata')
+  image=image.get('url')
+  if not isinstance(image,str):raise ValueError('ImageObject requires an exact image URL')
+ if image is not None:validate_image_url(image)
+ return {'id':url.rstrip('/').split('/')[-1],'title':a['headline'],'url':url,'publishedAt':a['datePublished'],'image':image}
 
 def new_articles():
  before=os.environ.get('PUBLICATION_BEFORE_SHA','');head=os.environ.get('GITHUB_SHA','')
