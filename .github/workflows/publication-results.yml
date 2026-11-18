@@ -6,6 +6,7 @@ on:
       - 'public/guides/**/index.html'
       - 'scripts/verify-and-record-publications.py'
       - 'scripts/test_publication.py'
+      - 'scripts/render-guide-media.mjs'
       - '.github/workflows/publication-results.yml'
   schedule:
     - cron: '23 * * * *'
@@ -17,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -31,6 +32,14 @@ jobs:
           PUBLICATION_REPORT_PATH: ${{ runner.temp }}/plow-observer-report.json
           PUBLICATION_BEFORE_SHA: ${{ github.event.before }}
         run: python3 scripts/verify-and-record-publications.py
+      - name: Install pinned browser for publication media review
+        if: github.event_name != 'schedule'
+        run: |
+          npm install --no-save --package-lock=false --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Inspect the published guide at desktop and phone widths
+        if: github.event_name != 'schedule'
+        run: node scripts/render-guide-media.mjs
       - name: Save public outcome and private verification evidence
         if: always()
         run: |
@@ -51,5 +60,7 @@ jobs:
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: plow-observer-${{ github.run_id }}
-          path: ${{ runner.temp }}/plow-observer-report.json
+          path: |
+            ${{ runner.temp }}/plow-observer-report.json
+            ${{ runner.temp }}/plow-guide-visual/
           retention-days: 14

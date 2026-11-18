@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 3,
+  "version": 4,
   "site": "Plow Installations",
   "domain": "www.plowinstallations.com",
   "repository": "SHTFTV/plowinstallations.com",
@@ -13,15 +13,15 @@
     "outputDirectory": "dist"
   },
   "publication": {
-    "id": "boss-drag-pro-8-16-parking-lot-killer",
-    "title": "BOSS DRAG PRO 8\u201316: the parking lot killer",
-    "url": "https://www.plowinstallations.com/guides/boss-drag-pro-8-16-parking-lot-killer/",
-    "publishedAt": "2026-11-11T16:54:01-08:00",
-    "sourceUrls": [
-      "https://www.bossplow.com/en/product/RPL21616",
-      "https://cdn.bossplow.com/content/servicecenter/documents/MSC22983_B.pdf",
-      "https://info.bossplow.com/drag-pro-rear-plow",
-      "https://www.bossplow.com/en/product-selector"
+    "id": "aldergrove-ford-f550-commercial-snow-plow-salter-builds",
+    "title": "Ford F-550 snow-service builds taking shape in Aldergrove",
+    "url": "https://www.plowinstallations.com/guides/aldergrove-ford-f550-commercial-snow-plow-salter-builds/",
+    "publishedAt": "2026-11-17T21:17:00-08:00",
+    "sourceUrls": [],
+    "photoMode": "exact-original-documentary-css-crop",
+    "sourceSHA256": [
+      "d6c5b64a90811f4dae93eb9110c3d28dc8b164d499ae6a000432aef9495ee795",
+      "fd0ea670d79a445309b8b69e86a31aaaba9187af39e9e4d8bb3e6fd2bbbd1ba0"
     ]
   },
   "template": "scripts/render-feature.py + templates/retained-guide.html",
@@ -32,10 +32,10 @@
     "public/brand/metal-pless-plbh-0836-16-share.png"
   ],
   "rules": [
-    "Publish the prepared16-foot PLBH0836-16 main feature, not the19-footTruckMaxx",
-    "PLBH0836-16:8ftbox/16ftexpanded,4ftwings,36inheight,approx2435lb; carrierapplication12001\u201318000lb",
-    "Manufacturer lists wheelloader/skidsteer/backhoe, not truck compatibility",
-    "Distinguish hydraulic wings from segmented cutting edges; verify ordered LiveEdge option",
+    "Publish the latest owner-authorized SHORT Aldergrove Ford F-550 fleet photo feature; preserve prior articles and timestamps.",
+    "Build notes identify Ford F-550 commercial build projects, 12-foot dump boxes, SnowDogg V-plows and commercial salters for industrial snow service and large parking lots.",
+    "Use only the two unchanged owner-supplied original JPEGs; CSS landscape crops have full original view links and do not fabricate equipment details.",
+    "Do not infer blade width, hopper capacity, certification, new-model release or that all components are factory-new. The owner-directed short format and exact-original portrait source exception are scoped to this feature.",
     "Preserve Full Flow Hydraulics/Durand contact, native enquiries, existing advertising and all prior post dates",
     "Public done event only after actual live article/content/source/discovery verification",
     "Use company-original exact-model source photographs where available with honest source credit; no Shutterstock or unrelated equipment. Minimum 1600x900 16:9, no upscaling, preserve subject, small site branding; inspect desktop and phone hero/card/social. No invented image-rights registry gate.",
@@ -53,9 +53,14 @@
       "date": "2026-11-11",
       "source": "User instruction via coordinator",
       "decision": "Replace proposed DXT with BOSS DRAG PRO 8\u201316 rear plow; use parking lot killer editorial angle; publish with official photography."
+    },
+    {
+      "date": "2026-11-17",
+      "source": "Explicit latest owner direction via coordinator",
+      "decision": "Publish a SHORT Aldergrove Ford F-550 fleet photo feature now using the two untouched owner-supplied originals. This scoped format instruction overrides the generic2000-word editorial threshold for this article only; no equipment detail regeneration or invented capacity/model-width claim."
     }
   ],
-  "sourceEvidence": "Official BOSS RPL21616 page, MSC22983 Rev B, DRAG PRO landing page and Product Selector; checked November 11, 2026",
+  "sourceEvidence": "Owner-supplied Ford F-550/Aldergrove/12-foot-box/commercial-service build notes and two exact original photographs 20261117_100645.jpg,20261117_100708.jpg; no exact capacity or blade-width claim.",
   "priorPosts": "public/feed.xml and existing guideHTML preserve original URLs/timestamps; append only this feature",
   "observer": {
     "nativeSchedule": "23 * * * *",
@@ -63,6 +68,40 @@
     "scope": "Reverify existing canonical guides and retain isolated failures; not automatic authoring",
     "publicationWriter": "not connected",
     "emptyQueueState": "no eligible publication queue; never publishing success",
-    "imageIdentity": "Supported PNG/JPEG/WebP magic and exact committed featured-image SHA256"
-  }
+    "imageIdentity": "Supported PNG/JPEG/WebP magic and exact committed featured-image SHA256",
+    "newPublicationMediaReview": {
+      "workflow": "publication-results.yml",
+      "script": "scripts/render-guide-media.mjs",
+      "viewports": [
+        "1440x1000",
+        "390x844"
+      ],
+      "proof": "Exact original bytes, honest portrait source dimensions, CSS documentary crop/focal placement, screenshot artifacts and separate human review"
+    }
+  },
+  "publicationHistory": [
+    {
+      "id": "boss-drag-pro-8-16-parking-lot-killer",
+      "title": "BOSS DRAG PRO 8\u201316: the parking lot killer",
+      "url": "https://www.plowinstallations.com/guides/boss-drag-pro-8-16-parking-lot-killer/",
+      "publishedAt": "2026-11-11T16:54:01-08:00",
+      "sourceUrls": [
+        "https://www.bossplow.com/en/product/RPL21616",
+        "https://cdn.bossplow.com/content/servicecenter/documents/MSC22983_B.pdf",
+        "https://info.bossplow.com/drag-pro-rear-plow",
+        "https://www.bossplow.com/en/product-selector"
+      ]
+    }
+  ],
+  "legacyFeatureRules": [
+    {
+      "scope": "Earlier PLBH0836-16 feature, retained history",
+      "rules": [
+        "Publish the prepared16-foot PLBH0836-16 main feature, not the19-footTruckMaxx",
+        "PLBH0836-16:8ftbox/16ftexpanded,4ftwings,36inheight,approx2435lb; carrierapplication12001\u201318000lb",
+        "Manufacturer lists wheelloader/skidsteer/backhoe, not truck compatibility",
+        "Distinguish hydraulic wings from segmented cutting edges; verify ordered LiveEdge option"
+      ]
+    }
+  ]
 }
