@@ -4,6 +4,15 @@ on:
     branches: [main]
     paths:
       - 'public/guides/**/index.html'
+      - 'public/installers/**'
+      - 'public/installer-flow.css'
+      - 'operations/site-sop.json'
+      - 'operations/contributor-profiles/**'
+      - 'src/**'
+      - 'index.html'
+      - 'metadata.json'
+      - 'scripts/test_installer_flow.py'
+      - 'scripts/render-installer-profiles.py'
       - 'scripts/verify-and-record-publications.py'
       - 'scripts/test_publication.py'
       - 'scripts/render-guide-media.mjs'
@@ -26,7 +35,7 @@ jobs:
           ref: main
           fetch-depth: 2
       - name: Verify observer regression checks
-        run: python3 -m unittest discover -s scripts -p 'test_publication.py' -v
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Verify new actual public guide and discovery; generate sanitized result
         env:
           PUBLICATION_REPORT_PATH: ${{ runner.temp }}/plow-observer-report.json

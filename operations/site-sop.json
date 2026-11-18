@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 4,
+  "version": 6,
   "site": "Plow Installations",
   "domain": "www.plowinstallations.com",
   "repository": "SHTFTV/plowinstallations.com",
@@ -32,11 +32,15 @@
     "public/brand/metal-pless-plbh-0836-16-share.png"
   ],
   "rules": [
+    "PlowInstallations is an Industry Army Marketing multi-city installer network. Global homepage, metadata, Organization/WebSite schema, navigation, footer and enquiry routing must not adopt an individual installer’s phone, email or city as platform identity.",
+    "Installer identity, base city, service area, contacts, original image and associated posts come from operations/contributor-profiles/*.json. Each published installer has a dedicated profile and linked preview in the directory/home.",
+    "Associated posts must show a profile-linked attribution block and one default-visible responsive floating installer business card with profile, call, text and email actions. Only associated installer data may populate the card; preserve the platform publisher.",
+    "Full Flow’s exact display label is Durand at Full Flow Hydraulics; its base is Aldergrove, BC and its service area is Greater Vancouver. Do not infer other shops, coverage, credentials, street address, price, dealer status or availability.",
+    "Enforce ownership and profile/card/discovery bindings with scripts/test_installer_flow.py; capture both associated posts, profile, directory and homepage at desktop and phone sizes using the existing observer workflow.",
     "Publish the latest owner-authorized SHORT Aldergrove Ford F-550 fleet photo feature; preserve prior articles and timestamps.",
     "Build notes identify Ford F-550 commercial build projects, 12-foot dump boxes, SnowDogg V-plows and commercial salters for industrial snow service and large parking lots.",
     "Use only the two unchanged owner-supplied original JPEGs; CSS landscape crops have full original view links and do not fabricate equipment details.",
     "Do not infer blade width, hopper capacity, certification, new-model release or that all components are factory-new. The owner-directed short format and exact-original portrait source exception are scoped to this feature.",
-    "Preserve Full Flow Hydraulics/Durand contact, native enquiries, existing advertising and all prior post dates",
     "Public done event only after actual live article/content/source/discovery verification",
     "Use company-original exact-model source photographs where available with honest source credit; no Shutterstock or unrelated equipment. Minimum 1600x900 16:9, no upscaling, preserve subject, small site branding; inspect desktop and phone hero/card/social. No invented image-rights registry gate.",
     "Only the existing publication-results workflow writes outcome receipts. A held image/story/feed must not stop independent eligible work; keep unresolved blockers recorded until verified fixed.",
@@ -52,12 +56,17 @@
     {
       "date": "2026-11-11",
       "source": "User instruction via coordinator",
-      "decision": "Replace proposed DXT with BOSS DRAG PRO 8\u201316 rear plow; use parking lot killer editorial angle; publish with official photography."
+      "decision": "Replace proposed DXT with BOSS DRAG PRO 8–16 rear plow; use parking lot killer editorial angle; publish with official photography."
     },
     {
       "date": "2026-11-17",
       "source": "Explicit latest owner direction via coordinator",
       "decision": "Publish a SHORT Aldergrove Ford F-550 fleet photo feature now using the two untouched owner-supplied originals. This scoped format instruction overrides the generic2000-word editorial threshold for this article only; no equipment detail regeneration or invented capacity/model-width claim."
+    },
+    {
+      "date": "2026-11-18",
+      "source": "Latest explicit owner correction relayed by coordinator",
+      "decision": "Separate IAM/PlowInstallations platform identity from Durand at Full Flow Hydraulics. Publish his own profile, linked previews and floating profile/contact cards on F550 and BOSS DRAG PRO, with Aldergrove base and Greater Vancouver service area. Supersedes the old global Full Flow contact-preservation rule."
     }
   ],
   "sourceEvidence": "Owner-supplied Ford F-550/Aldergrove/12-foot-box/commercial-service build notes and two exact original photographs 20261117_100645.jpg,20261117_100708.jpg; no exact capacity or blade-width claim.",
@@ -82,7 +91,7 @@
   "publicationHistory": [
     {
       "id": "boss-drag-pro-8-16-parking-lot-killer",
-      "title": "BOSS DRAG PRO 8\u201316: the parking lot killer",
+      "title": "BOSS DRAG PRO 8–16: the parking lot killer",
       "url": "https://www.plowinstallations.com/guides/boss-drag-pro-8-16-parking-lot-killer/",
       "publishedAt": "2026-11-11T16:54:01-08:00",
       "sourceUrls": [
@@ -98,10 +107,39 @@
       "scope": "Earlier PLBH0836-16 feature, retained history",
       "rules": [
         "Publish the prepared16-foot PLBH0836-16 main feature, not the19-footTruckMaxx",
-        "PLBH0836-16:8ftbox/16ftexpanded,4ftwings,36inheight,approx2435lb; carrierapplication12001\u201318000lb",
+        "PLBH0836-16:8ftbox/16ftexpanded,4ftwings,36inheight,approx2435lb; carrierapplication12001–18000lb",
         "Manufacturer lists wheelloader/skidsteer/backhoe, not truck compatibility",
         "Distinguish hydraulic wings from segmented cutting edges; verify ordered LiveEdge option"
       ]
     }
-  ]
+  ],
+  "installerNetwork": {
+    "platform": {
+      "name": "PlowInstallations",
+      "publisher": "Industry Army Marketing",
+      "publisherURL": "https://www.industryarmymarketing.com/",
+      "directoryPath": "/installers/",
+      "globalContact": "Select an installer; no business contact is the platform contact"
+    },
+    "registryDirectory": "operations/contributor-profiles",
+    "profileRenderer": "scripts/render-installer-profiles.py",
+    "sourceEnforcement": "scripts/test_installer_flow.py",
+    "profiles": [
+      {
+        "id": "full-flow-hydraulics",
+        "profilePath": "/installers/full-flow-hydraulics-aldergrove/",
+        "associatedPosts": [
+          "aldergrove-ford-f550-commercial-snow-plow-salter-builds",
+          "boss-drag-pro-8-16-parking-lot-killer"
+        ]
+      }
+    ],
+    "responsiveCard": {
+      "defaultVisible": true,
+      "desktopReservedGutterPixels": 360,
+      "phoneBottomClearancePixels": 190,
+      "phoneCanCollapse": true
+    },
+    "ownedArticleAuthorship": "F550 owner-supplied context is attributed to Durand. BOSS researched article keeps original editorial author/date; installer association is an enquiry contact, not a hands-on installation/dealer claim."
+  }
 }
