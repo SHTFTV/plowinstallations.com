@@ -1,7 +1,8 @@
 {
-  "name": "Full Flow Hydraulics & Plow Installations | Aldergrove, BC",
-  "description": "Commercial 3-bay snow plow installation, hydraulic repair, aluminum & steel custom welding, and auto mechanics shop located at 26020 62 Ave, Aldergrove, BC V4W 1V3. Phone: (604) 817-3783, Email: info@fullflowhydraulics.com.",
+  "name": "PlowInstallations | Installer network",
+  "description": "Independent snowplow installer profiles, installation reading and equipment guides across cities. An Industry Army Marketing network.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
-

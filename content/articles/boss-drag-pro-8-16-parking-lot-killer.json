@@ -58,5 +58,7 @@
       "label": "BOSS Product Selector: verify actual truck and required components",
       "url": "https://www.bossplow.com/en/product-selector"
     }
-  ]
+  ],
+  "contributorProfileId": "full-flow-hydraulics",
+  "installerProfilePath": "/installers/full-flow-hydraulics-aldergrove/"
 }

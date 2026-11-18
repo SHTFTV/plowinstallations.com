@@ -1,7 +1,7 @@
 {
   "id": "aldergrove-ford-f550-commercial-snow-plow-salter-builds",
   "title": "Ford F-550 snow-service builds taking shape in Aldergrove",
-  "summary": "Duran\u2019s shop is preparing commercial Ford F-550 builds with 12-foot dump boxes, SnowDogg V-plows and commercial salting equipment for industrial properties and large parking lots.",
+  "summary": "At Full Flow Hydraulics in Aldergrove, Durand is preparing commercial Ford F-550 builds with 12-foot dump boxes, SnowDogg V-plows and salting equipment for industrial sites and large parking lots.",
   "url": "https://www.plowinstallations.com/guides/aldergrove-ford-f550-commercial-snow-plow-salter-builds/",
   "publishedAt": "2026-11-17T21:17:00-08:00",
   "displayDate": "November 17, 2026",
@@ -10,7 +10,7 @@
     {
       "heading": "Built around commercial snow service",
       "paragraphs": [
-        "The next snow-service build starts with the properties it needs to cover. At Duran\u2019s shop in Aldergrove, the current Ford F-550 builds bring together12-foot dump boxes, SnowDogg V-plows and commercial salters for industrial snow service and large parking lots.",
+        "The next snow-service build starts with the properties it needs to cover. At Durand’s shop in Aldergrove, the current Ford F-550 builds bring together12-foot dump boxes, SnowDogg V-plows and commercial salters for industrial snow service and large parking lots.",
         "The photographs show the equipment at the shop: a stainless SnowDogg V-plow at the front of a Ford truck and a Henderson-branded hopper installed in a black dump body."
       ]
     },
@@ -22,9 +22,9 @@
       ]
     },
     {
-      "heading": "See Duran in Aldergrove",
+      "heading": "See Durand in Aldergrove",
       "paragraphs": [
-        "Planning a commercial snow-service build? See Duran at Full Flow Automatics in Aldergrove. Bring your truck details, the types of properties on your route and the plowing and salting equipment you need to discuss."
+        "Planning a commercial snow-service build? See Durand at Full Flow Hydraulics in Aldergrove. Bring your truck details, the types of properties on your route and the plowing and salting equipment you need to discuss."
       ]
     }
   ],
@@ -34,7 +34,7 @@
       "original": "20261117_100645.jpg",
       "position": "center 33%",
       "alt": "SnowDogg stainless V-plow in front of a Ford truck at the Aldergrove shop",
-      "caption": "SnowDogg V-plow at Duran\u2019s Aldergrove shop. Owner-supplied photograph.",
+      "caption": "SnowDogg V-plow at Durand’s Full Flow Hydraulics shop in Aldergrove. Owner-supplied photograph.",
       "sha256": "d6c5b64a90811f4dae93eb9110c3d28dc8b164d499ae6a000432aef9495ee795",
       "path": "public/brand/aldergrove-f550-snowdogg-original-20261117.jpg"
     },
@@ -43,7 +43,7 @@
       "original": "20261117_100708.jpg",
       "position": "center 45%",
       "alt": "Henderson-branded hopper and salter equipment installed in a black dump body",
-      "caption": "Henderson-branded hopper and dump body. Owner-supplied photograph.",
+      "caption": "Henderson-branded hopper and dump body at Full Flow Hydraulics. Owner-supplied photograph.",
       "sha256": "fd0ea670d79a445309b8b69e86a31aaaba9187af39e9e4d8bb3e6fd2bbbd1ba0",
       "path": "public/brand/aldergrove-dump-henderson-salter-original-20261117.jpg"
     }
@@ -51,8 +51,17 @@
   "sourceNotes": {
     "facts": "Ford F-550 build identification,12-foot boxes,location and commercial-service purpose are user-supplied build notes; photographs independently show SnowDogg V-plow and Henderson hopper. Avoid identifying both photographs as the same truck.",
     "modelText": "Original decal reads VXFII. Use generic SnowDogg V-plow in copy rather than silently changing visible equipment to VFX.",
-    "cta": "User-supplied business name. No independently verified official URL; use plain text rather than an invented link.",
+    "cta": "Full Flow Hydraulics identity and canonical phone/email confirmed by the owner and existing site footer; no unverified website URL.",
     "sourceImages": "Exact original JPEG bytes; all generated crop/branding candidates rejected after detail comparison."
   },
-  "authoring": "Direct owner-requested manual editorial publication; not autonomous authoring."
+  "authoring": "Direct owner-requested manual editorial publication; not autonomous authoring.",
+  "contributorProfileId": "full-flow-hydraulics",
+  "installerProfilePath": "/installers/full-flow-hydraulics-aldergrove/",
+  "contributorProfile": "operations/contributor-profiles/full-flow-hydraulics.json",
+  "contributor": {
+    "name": "Durand",
+    "business": "Full Flow Hydraulics",
+    "location": "Aldergrove, BC"
+  },
+  "modifiedAt": "2026-11-17T22:10:17-08:00"
 }

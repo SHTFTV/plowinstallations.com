@@ -153,7 +153,7 @@ export const FitmentDatabase: React.FC<FitmentDatabaseProps> = ({
       gvwrLbs: 9900,
       frontGawrLbs: 4800,
       plowPrepPackageCode: "Shop Custom Fabrication / Direct Fit",
-      plowPrepDescription: "Verified by Full Flow Hydraulics 3-bay technical shop in Aldergrove, BC.",
+      plowPrepDescription: "User-entered reference; manufacturer and installer confirmation required.",
       compatiblePlows: [
         {
           brand: newPlowBrand as any,
@@ -167,7 +167,7 @@ export const FitmentDatabase: React.FC<FitmentDatabaseProps> = ({
           minBallastRequiredLbs: newBallastLbs,
           estLaborHours: newEstHours,
           fitmentLevel: "Direct Bolt-On",
-          notes: newNotes || "Custom shop verified installation at 26020 62 Ave, Aldergrove.",
+          notes: newNotes || "User-entered reference; installation has not been verified.",
         },
       ],
     };
@@ -193,13 +193,13 @@ export const FitmentDatabase: React.FC<FitmentDatabaseProps> = ({
           <div className="max-w-3xl">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-black uppercase tracking-wider mb-3">
               <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
-              <span>Full Flow Hydraulics Compatibility Engine • Aldergrove, BC</span>
+              <span>PlowInstallations · Fitment reference</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-black text-white tracking-tight">
               Truck-to-Plow <span className="text-amber-400">Fitment & Mount Database</span>
             </h1>
             <p className="text-sm md:text-base text-slate-300 mt-2 leading-relaxed">
-              Find guaranteed direct bolt-on mounts, lighting harnesses, controller looms, and ballast specifications for your truck. Verified by our 3-bay commercial shop at <strong>26020 62 Ave, Aldergrove, BC</strong>.
+              Explore mounts, wiring and ballast reference information. Confirm the exact truck, plow and current manufacturer requirements with your selected installer before purchase or installation.
             </p>
             <div className="flex flex-wrap items-center gap-4 mt-4 text-xs font-semibold text-slate-300">
               <span className="flex items-center space-x-1.5 text-amber-300">
@@ -212,18 +212,18 @@ export const FitmentDatabase: React.FC<FitmentDatabaseProps> = ({
               </span>
               <span className="flex items-center space-x-1.5 text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>In-Bay Aldergrove Installation Available</span>
+                <span>Choose an independent installer</span>
               </span>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
             <a
-              href="tel:6048173783"
+              href="/installers/"
               className="inline-flex items-center justify-center space-x-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700 shadow-md transition-all"
             >
               <Phone className="w-4 h-4 text-amber-400" />
-              <span>Call (604) 817-3783</span>
+              <span>Find an installer</span>
             </a>
             <button
               onClick={() => setIsAddFitmentOpen(true)}
@@ -364,7 +364,7 @@ export const FitmentDatabase: React.FC<FitmentDatabaseProps> = ({
           <Truck className="w-12 h-12 text-slate-600 mx-auto mb-3" />
           <h3 className="text-lg font-bold text-white">No Vehicle Fitments Matched</h3>
           <p className="text-sm text-slate-400 max-w-md mx-auto mt-1">
-            We couldn't find a direct database match for this specific filter set. Our Aldergrove shop specializes in custom welding and fabrication for any custom truck or lifted vehicle.
+            We couldn't find a match for this filter set. Contact an installer with the exact truck, plow and mounting details to discuss the equipment.
           </p>
           <div className="flex justify-center gap-3 mt-5">
             <button
@@ -374,11 +374,11 @@ export const FitmentDatabase: React.FC<FitmentDatabaseProps> = ({
               Clear Filters
             </button>
             <a
-              href="tel:6048173783"
+              href="/installers/"
               className="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs inline-flex items-center space-x-1.5"
             >
               <Phone className="w-3.5 h-3.5" />
-              <span>Call Shop Tech: (604) 817-3783</span>
+              <span>Find an installer</span>
             </a>
           </div>
         </div>
@@ -467,7 +467,7 @@ export const FitmentDatabase: React.FC<FitmentDatabaseProps> = ({
                           <span className="font-bold text-emerald-400">{plow.minBallastRequiredLbs} lbs</span>
                         </div>
                         <div className="flex items-center justify-between">
-                          <span className="text-slate-400 font-medium">Aldergrove Bay Labor:</span>
+                          <span className="text-slate-400 font-medium">Listed labour estimate:</span>
                           <span className="font-mono text-slate-300">{plow.estLaborHours} hrs est.</span>
                         </div>
                       </div>
@@ -502,14 +502,14 @@ export const FitmentDatabase: React.FC<FitmentDatabaseProps> = ({
                             onRequestQuote(
                               `${fitment.make} ${fitment.model} (${fitment.yearRange})`,
                               `${plow.brand} - ${plow.model} (Mount: ${plow.mountKitPart})`,
-                              `Customer requested installation quote at Full Flow Hydraulics 3-bay Aldergrove shop. Estimated labor: ${plow.estLaborHours} hrs.`
+                              `Customer is preparing an enquiry for their selected installer. Estimated labor: ${plow.estLaborHours} hrs.`
                             );
                           }
                         }}
                         className="flex-1 inline-flex items-center justify-center space-x-1.5 px-3 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-black transition-all shadow-md shadow-amber-500/10"
                       >
                         <Calendar className="w-3.5 h-3.5" />
-                        <span>Book Aldergrove Bay</span>
+                        <span>Choose an installer</span>
                       </button>
                     </div>
                   </div>
