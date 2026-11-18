@@ -46,3 +46,12 @@
 .pi-latest-guides{padding:60px max(24px,6vw)}.pi-guide-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;max-width:1280px;margin:auto}.pi-guide-heading>a{font-size:13px;font-weight:700;white-space:nowrap}.pi-latest-guides h2{font-family:'Barlow Condensed',Impact,sans-serif;font-size:42px;line-height:1.05;margin-top:10px}.pi-latest-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1280px;margin:28px auto 0;gap:24px}.pi-latest-grid>a{display:flex;flex-direction:column;border-radius:5px;padding-bottom:20px}.pi-guide-photo{position:relative;aspect-ratio:16/10;background:#fff;overflow:hidden}.pi-latest-grid .pi-guide-photo img{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;background:#fff}.pi-latest-grid .pi-guide-photo.is-product img{object-fit:contain;padding:24px 12px 10px}.pi-guide-brand{position:absolute;left:12px;top:12px;border-radius:2px;background:#102734;color:white;padding:5px 7px;font-size:8px;font-weight:800;letter-spacing:.1em}.pi-guide-credit{font-size:9px;color:#61717a;margin:10px 16px 0}.pi-latest-grid time{font-size:11px;color:#62727b;margin:12px 16px 0}.pi-latest-grid h3{font-size:22px;margin:9px 16px;line-height:1.15}.pi-latest-grid p{font-size:13px;line-height:1.6;margin:0 16px 18px}.pi-guide-read{margin:auto 16px 0;font-size:11px;font-weight:800;color:#a83c0e}.pi-latest-grid>a:hover{border-color:#ff6a25;box-shadow:0 8px 22px #10273412}
 @media(max-width:900px){.pi-latest-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pi-guide-heading{align-items:start;flex-direction:column;gap:15px}}
 @media(max-width:540px){.pi-latest-grid{grid-template-columns:1fr}.pi-latest-guides{padding:40px 6%}.pi-latest-guides h2{font-size:34px}}
+
+@media (max-width: 600px) {
+  .pi-nav { padding: 12px 5%; gap: 8px; }
+  .pi-brand .pi-logo-lockup { width: min(48vw, 185px); }
+  .pi-nav .pi-brand { gap: 3px; }
+  .pi-hero .pi-hero-identity { display: none; }
+  .pi-hero .pi-hero-content { padding-top: 24px; }
+  .pi-hero h1 { font-size: clamp(2.8rem, 13vw, 4.2rem); line-height: .97; }
+}
