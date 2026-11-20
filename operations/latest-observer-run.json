@@ -1,13 +1,13 @@
 {
   "status": {
     "site": "plowinstallations.com",
-    "checkedAt": "2026-11-20T02:23:46.430351+00:00",
-    "trigger": "schedule",
-    "sourceCommit": "3a34eb89dc2cc6c716c6826a7a3c12036dbb6118",
+    "checkedAt": "2026-11-20T07:49:18.595306+00:00",
+    "trigger": "push",
+    "sourceCommit": "6dda01dcd30afce3d03230f4cd31e18f20d571ab",
     "scope": "Existing guide publication observer; not an article author or publisher",
     "status": "existing-guides-verified",
-    "checkedGuides": 11,
-    "passedGuides": 11,
+    "checkedGuides": 12,
+    "passedGuides": 12,
     "failures": [],
     "automaticArticleWriterConfigured": false,
     "automaticPublicationVerified": false,
@@ -66,11 +66,16 @@
       "status": "done"
     },
     {
+      "id": "snowex-8100pp-power-plow-truck-fit-mount-parts",
+      "url": "https://www.plowinstallations.com/guides/snowex-8100pp-power-plow-truck-fit-mount-parts/",
+      "status": "done"
+    },
+    {
       "id": "western-ultramount-2-attachment-installation-guide",
       "url": "https://www.plowinstallations.com/guides/western-ultramount-2-attachment-installation-guide/",
       "status": "done"
     }
   ],
   "failures": [],
-  "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/44660438396"
+  "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/44697084314"
 }
