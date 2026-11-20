@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 7,
+  "version": 8,
   "site": "Plow Installations",
   "domain": "www.plowinstallations.com",
   "repository": "SHTFTV/plowinstallations.com",
@@ -45,7 +45,10 @@
     "Use company-original exact-model source photographs where available with honest source credit; no Shutterstock or unrelated equipment. Minimum 1600x900 16:9, no upscaling, preserve subject, small site branding; inspect desktop and phone hero/card/social. No invented image-rights registry gate.",
     "Only the existing publication-results workflow writes outcome receipts. A held image/story/feed must not stop independent eligible work; keep unresolved blockers recorded until verified fixed.",
     "No universal compatibility, torque, wiring, hydraulic or ballast instructions. Verify exact model/serial and vehicle-specific manufacturer documents.",
-    "Distinguish manually published and live-verified articles from whole-site runtime publisher automation. This post proves no scheduled runtime."
+    "Distinguish manually published and live-verified articles from whole-site runtime publisher automation. This post proves no scheduled runtime.",
+    "Every article includes a skinny installer recruitment banner asking whether the reader runs a plow installation company and linking to the network recruitment page.",
+    "Route Lower Mainland city enquiries to the Full Flow Hydraulics profile card, with specific city coverage confirmed directly. Use the PlowInstallations recruitment card for places outside the Lower Mainland until a local installer profile is available.",
+    "Associate the SnowEx 8100PP article with Durand at Full Flow Hydraulics. Use the registry-linked contribution and contact card, cite the manufacturer for specifications, and leave hands-on installation claims out unless independently documented."
   ],
   "decisions": [
     {
@@ -72,6 +75,11 @@
       "date": "2026-11-19",
       "source": "Direct owner instruction",
       "decision": "Future model guides require deeper intended-use, exact truck/carrier fit, mounting, electrical and parts/service coverage. Apply AEO, SEO, GEO and LLM readability requirements in the site source of truth."
+    },
+    {
+      "date": "2026-11-19",
+      "source": "Direct owner instruction",
+      "decision": "Make the SnowEx 8100PP a Durand at Full Flow Hydraulics installation-perspective feature. Add Lower Mainland Full Flow routing, recruitment outside the Lower Mainland, and a skinny recruitment banner on all posts."
     }
   ],
   "sourceEvidence": "Owner-supplied Ford F-550/Aldergrove/12-foot-box/commercial-service build notes and two exact original photographs 20261117_100645.jpg,20261117_100708.jpg; no exact capacity or blade-width claim.",
@@ -135,7 +143,8 @@
         "profilePath": "/installers/full-flow-hydraulics-aldergrove/",
         "associatedPosts": [
           "aldergrove-ford-f550-commercial-snow-plow-salter-builds",
-          "boss-drag-pro-8-16-parking-lot-killer"
+          "boss-drag-pro-8-16-parking-lot-killer",
+          "snowex-8100pp-power-plow-truck-fit-mount-parts"
         ]
       }
     ],

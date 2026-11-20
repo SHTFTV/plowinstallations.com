@@ -32,6 +32,12 @@
     {
       "id": "boss-drag-pro-8-16-parking-lot-killer",
       "relationship": "associated installer enquiry; editorial research remains PlowInstallations"
+    },
+    {
+      "id": "snowex-8100pp-power-plow-truck-fit-mount-parts",
+      "relationship": "Full Flow Hydraulics installation perspective, with PlowInstallations editorial research and no hands-on 8100PP install claim",
+      "installerPerspective": true,
+      "imageCredit": "SnowEx / Douglas Dynamics · POWER PLOW family"
     }
   ],
   "provenance": {

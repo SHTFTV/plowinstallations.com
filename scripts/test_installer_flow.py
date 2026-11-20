@@ -27,8 +27,21 @@ class InstallerFlowTests(unittest.TestCase):
  def test_generated_profiles_blocks_and_previews_match_registry(self):
   for path,expected in renderer.render_all().items():self.assertEqual(text(path),expected,path)
  def test_each_associated_post_has_correct_visible_owner_and_platform_shell(self):
-  self.assertEqual(len(self.p['associatedPosts']),2)
+  self.assertIn('snowex-8100pp-power-plow-truck-fit-mount-parts',{post['id'] for post in self.p['associatedPosts']})
   for post in self.p['associatedPosts']:assert_owner_binding(text('public/guides/'+post['id']+'/index.html'),self.p)
+ def test_all_guide_posts_have_one_recruitment_banner(self):
+  for post in (ROOT/'public/guides').glob('*/index.html'):
+   page=post.read_text()
+   self.assertEqual(page.count('class="installer-recruitment-banner"'),1,post)
+   self.assertIn(renderer.OTHER_CITIES+'#join-network',page,post)
+ def test_installer_directory_routes_regions_separately(self):
+  lower=text('public'+renderer.LOWER_MAINLAND+'index.html')
+  other=text('public'+renderer.OTHER_CITIES+'index.html')
+  self.assertIn(self.p['profilePath'],lower)
+  self.assertIn('tel:'+self.p['telephone'],lower)
+  self.assertNotIn(self.p['profilePath'],other)
+  self.assertIn('Are you a plow installation company?',other)
+  self.assertIn(renderer.RECRUIT,other)
  def test_contact_mutation_is_rejected(self):
   t=text('public/guides/'+self.p['associatedPosts'][0]['id']+'/index.html');t=t.replace('tel:'+self.p['telephone'],'tel:+10000000000')
   with self.assertRaises(ValueError):assert_owner_binding(t,self.p)

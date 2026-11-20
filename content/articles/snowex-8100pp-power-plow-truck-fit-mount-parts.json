@@ -65,5 +65,11 @@
         "Bring the truck details, photos of any existing mount and electrical hardware, the blade and attachment serials if used, and measurements of the tightest parts of your route. Tell the installer where you angle, scoop or make wide straight passes and where you stack snow. Request an itemized fitment quote and ask what the shop checks at handover. <a href=\"/installers/\">Find an installer through PlowInstallations</a>."
       ]
     }
-  ]
+  ],
+  "installerContributor": {
+    "id": "full-flow-hydraulics",
+    "name": "Durand at Full Flow Hydraulics",
+    "profilePath": "/installers/full-flow-hydraulics-aldergrove/",
+    "scope": "Installation perspective and fitment enquiries. Manufacturer specifications are editorially sourced."
+  }
 }

@@ -23,7 +23,8 @@ export const installerProfiles = [
     },
     "associatedPostIds": [
       "aldergrove-ford-f550-commercial-snow-plow-salter-builds",
-      "boss-drag-pro-8-16-parking-lot-killer"
+      "boss-drag-pro-8-16-parking-lot-killer",
+      "snowex-8100pp-power-plow-truck-fit-mount-parts"
     ]
   }
 ] as const;
