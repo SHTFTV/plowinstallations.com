@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 6,
+  "version": 7,
   "site": "Plow Installations",
   "domain": "www.plowinstallations.com",
   "repository": "SHTFTV/plowinstallations.com",
@@ -67,6 +67,11 @@
       "date": "2026-11-18",
       "source": "Latest explicit owner correction relayed by coordinator",
       "decision": "Separate IAM/PlowInstallations platform identity from Durand at Full Flow Hydraulics. Publish his own profile, linked previews and floating profile/contact cards on F550 and BOSS DRAG PRO, with Aldergrove base and Greater Vancouver service area. Supersedes the old global Full Flow contact-preservation rule."
+    },
+    {
+      "date": "2026-11-19",
+      "source": "Direct owner instruction",
+      "decision": "Future model guides require deeper intended-use, exact truck/carrier fit, mounting, electrical and parts/service coverage. Apply AEO, SEO, GEO and LLM readability requirements in the site source of truth."
     }
   ],
   "sourceEvidence": "Owner-supplied Ford F-550/Aldergrove/12-foot-box/commercial-service build notes and two exact original photographs 20261117_100645.jpg,20261117_100708.jpg; no exact capacity or blade-width claim.",
@@ -141,5 +146,15 @@
       "phoneCanCollapse": true
     },
     "ownedArticleAuthorship": "F550 owner-supplied context is attributed to Durand. BOSS researched article keeps original editorial author/date; installer association is an enquiry contact, not a hands-on installation/dealer claim."
+  },
+  "guideEditorialStandard": {
+    "scope": "All future PlowInstallations equipment selection, installation planning and ownership guides.",
+    "depth": "Answer who should choose the exact model, the jobs where it earns its place, the tradeoffs, and when a different blade or carrier is a better fit. Explain practical installation and service implications beyond the spec table.",
+    "fitAndMount": "Verify the manufacturer's model and SKU, carrier class, blade working widths by mode, plow weight and weight exclusions. Explain the attachment system, separate vehicle-specific mount and electrical package, included versus separately ordered parts, and what the exact-vehicle fit lookup confirms. Use exact configuration and axle limits, approved ballast and installer verification. Avoid broad fit promises or DIY installation instructions.",
+    "partsAndSupport": "Link the exact serial/model parts diagrams, service resources and authorized dealer lookup. Identify useful wear items and model-specific parts to ask about. Distinguish catalog listing from local stock and lead time; verify any local availability claim with a dated source.",
+    "answerEngineOptimization": "Give the direct buyer answer early. Use descriptive question headings and concise answers for fit, mounting, typical jobs and parts when supported. Clarify ambiguous model names and terms.",
+    "searchEngineOptimization": "Give each guide a unique title, description and canonical URL. Include a verified featured image with descriptive alt text and accurate credit, and matching social image and appropriate structured data. Verify discovery from relevant on-site pages, sitemap and feed through the existing release checks.",
+    "generativeEngineOptimization": "Use clear entity names, model identifiers, units and operating modes. Link primary manufacturer evidence near factual claims. Label installer judgment and practical scenarios, and avoid unsupported availability, price, fit or performance guarantees.",
+    "llmReadability": "Make the key facts accessible in rendered HTML with meaningful headings and native tables for model comparisons where useful. Keep visible copy, metadata and structured data consistent. Update existing machine-readable discovery surfaces where the publishing workflow supports them."
   }
 }
