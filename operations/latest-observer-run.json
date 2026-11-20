@@ -1,13 +1,13 @@
 {
   "status": {
     "site": "plowinstallations.com",
-    "checkedAt": "2026-11-14T02:15:52.625295+00:00",
-    "trigger": "push",
-    "sourceCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
+    "checkedAt": "2026-11-20T02:23:46.430351+00:00",
+    "trigger": "schedule",
+    "sourceCommit": "3a34eb89dc2cc6c716c6826a7a3c12036dbb6118",
     "scope": "Existing guide publication observer; not an article author or publisher",
     "status": "existing-guides-verified",
-    "checkedGuides": 10,
-    "passedGuides": 10,
+    "checkedGuides": 11,
+    "passedGuides": 11,
     "failures": [],
     "automaticArticleWriterConfigured": false,
     "automaticPublicationVerified": false,
@@ -15,6 +15,11 @@
     "timestampMeaning": "Last material observer state change; use native Actions run for freshness"
   },
   "results": [
+    {
+      "id": "aldergrove-ford-f550-commercial-snow-plow-salter-builds",
+      "url": "https://www.plowinstallations.com/guides/aldergrove-ford-f550-commercial-snow-plow-salter-builds/",
+      "status": "done"
+    },
     {
       "id": "boss-drag-pro-8-16-parking-lot-killer",
       "url": "https://www.plowinstallations.com/guides/boss-drag-pro-8-16-parking-lot-killer/",
@@ -67,5 +72,5 @@
     }
   ],
   "failures": [],
-  "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988"
+  "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/44660438396"
 }

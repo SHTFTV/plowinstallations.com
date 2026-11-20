@@ -169,6 +169,23 @@
       "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/43545285988",
       "loadedCommit": "b033ee237263c52c6fe9fb19135b1cea71082f0c",
       "siteSopVersion": 3
+    },
+    {
+      "article": {
+        "id": "aldergrove-ford-f550-commercial-snow-plow-salter-builds",
+        "title": "Ford F-550 snow-service builds taking shape in Aldergrove",
+        "url": "https://www.plowinstallations.com/guides/aldergrove-ford-f550-commercial-snow-plow-salter-builds/",
+        "publishedAt": "2026-11-17T21:17:00-08:00",
+        "image": "https://www.plowinstallations.com/brand/aldergrove-f550-snowdogg-original-20261117.jpg"
+      },
+      "result": {
+        "status": "done",
+        "checkedAt": "2026-11-20T02:23:41.273174+00:00",
+        "verifiedAt": "2026-11-20T02:23:41.273190+00:00"
+      },
+      "runUrl": "https://github.com/SHTFTV/plowinstallations.com/actions/runs/44660438396",
+      "loadedCommit": "3a34eb89dc2cc6c716c6826a7a3c12036dbb6118",
+      "siteSopVersion": 6
     }
   ]
 }
