@@ -4,6 +4,14 @@
   "framework": "vite",
   "rewrites": [
     {
+      "source": "/guides/how-long-does-plow-installation-take",
+      "destination": "/guides/how-long-does-plow-installation-take/index.html"
+    },
+    {
+      "source": "/guides/how-long-does-plow-installation-take/",
+      "destination": "/guides/how-long-does-plow-installation-take/index.html"
+    },
+    {
       "source": "/guides/will-snow-plow-void-truck-warranty",
       "destination": "/guides/will-snow-plow-void-truck-warranty/index.html"
     },
