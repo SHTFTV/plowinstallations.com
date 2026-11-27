@@ -1,0 +1,39 @@
+{
+  "site": "plowinstallations.com",
+  "slug": "plow-mount-types-between-brands",
+  "originalPublishedAt": "2026-11-27T14:00:00+00:00",
+  "reviewedAt": "2026-11-27T17:32:55+00:00",
+  "baseCommit": "a0eb9a284299841ddea8ac41e199ad7b89402dae",
+  "reason": "Correct broad fit and wiring promises in the externally published daily article; preserve original title, date, route and source image.",
+  "changes": [
+    "Require exact vehicle, plow, mount generation and electrical application checks.",
+    "Replace generalized mounting steps and obsolete universal BOSS wording with current manufacturer references.",
+    "Retain platform identity and add the existing required installer-network invitation."
+  ],
+  "sources": [
+    {
+      "title": "FISHER: Minute Mount 2 attachment system",
+      "url": "https://fisherplows.com/minute-mount-2/"
+    },
+    {
+      "title": "WESTERN: UltraMount 2 mounting system",
+      "url": "https://westernplows.com/ultramount-2-snowplow-mounting-system/"
+    },
+    {
+      "title": "FISHER: plow transfers and vehicle/electrical compatibility",
+      "url": "https://fisherplows.com/resource-articles/inside-tips-on-plow-transfers/"
+    },
+    {
+      "title": "BOSS: current vehicle Product Selector",
+      "url": "https://www.bossplow.com/en/product-selector"
+    },
+    {
+      "title": "BOSS: model-specific manuals and technical information",
+      "url": "https://www.bossplow.com/en/manuals/index/17"
+    },
+    {
+      "title": "BOSS: attachment-system and component terminology",
+      "url": "https://info.bossplow.com/blog/blog/bid/157843/the-ultimate-glossary-of-snow-plow-parts-terminology"
+    }
+  ]
+}
