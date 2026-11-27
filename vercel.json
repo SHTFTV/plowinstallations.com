@@ -4,6 +4,14 @@
   "framework": "vite",
   "rewrites": [
     {
+      "source": "/guides/plow-mount-types-between-brands",
+      "destination": "/guides/plow-mount-types-between-brands/index.html"
+    },
+    {
+      "source": "/guides/plow-mount-types-between-brands/",
+      "destination": "/guides/plow-mount-types-between-brands/index.html"
+    },
+    {
       "source": "/guides/how-long-does-plow-installation-take",
       "destination": "/guides/how-long-does-plow-installation-take/index.html"
     },
